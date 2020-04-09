@@ -1,0 +1,146 @@
+<!DOCTYPE html>	   		
+<html lang=“en”>			
+
+ <head>				
+ 	<meta charset=“utf-8”>
+    	<title>Trip to Japan</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+ 
+<body>
+  <div id="sample">
+    <!-- headings -->
+    
+    <h1>This is h1.</h1>
+    <h2>This is h2.</h2>
+    <h3>This is h3.</h3>
+    <h4>This is h4.</h4>
+    <h5>This is h5.</h5>
+    <h6>This is h6.</h6>
+    
+    <!-- paragraph element -->
+    
+    <p>This is paragraph.</p>
+    <p>This is another paragraph. <br> Here I use br tag to go to new line.</p>
+		
+    <!-- image elements -->
+    
+    <!-- imgae using absolute path -->
+		<img src="https://lh3.googleusercontent.com/g9WpewuXDawT8Kjm-61cpKcxpttfT8SzqU21SDW3VW1F5t7cUlI22dPF_yiSsAOgJR5l2xy9Dzg_bTQ2IF_dwdEWQdS-nnP38yNyJssi5HfwdnW9Wb4RGCk3Qt7hMEvf319ana1F35Ku6Yrm7bmYUlBRjbJCoNQJWUDrhZB5oa60l-BUKTEc4dcAQK0ppClYYZQjXrtuuFnY7c9L11RjBOflitCCOh-XjctqtK6zAq7-xBQrwYPdQ1je5ShqN5ggoOHl0G_Mmhvt3SQ2EQ-OWVxW3fqO0i4XjSBvFRJ5REgT1nBxu31zvUfqiWmEyX1khQvBwSsCA_M7xgw0fNrHrnVQaMD0-6McvO9YUghsNe7gHKsE8m0mfFta8-PByEqiuB1ul-IjzorOp20kLAF0HMF8hnJ9jYk_v4hsvC0FY_zwiOvRjZ18I2zMjNRIEpZRwRQYkJ_5e0ywY3geEKzgGC3CeZJvnHdpiJWbY_00K22Fxqdz4xVn7P4H7l0XvfusDLdgNo4xQGqn0dCaaCRccAfTqXhLglCh7bkrYH66EgSCAf79arb0k8nPvB0aRwPK2u1sZ8L0LysEfzuOCXKescXwATyR75fFxfQvOAMdlwBXnN_J9XyT9xwfd2VDGo-YJF8HGp_UwQM0mMfPQ20ENef7QedDz3LUd2cbRsU3wSQwihF3JvOV_yndfB3fVWRHMWTzsP5sAg9lMIC4HD0m1-LWZ3sxDBELPlZbvKOBmA2xqcZ87aTKRD8=w1385-h970-no">
+    <!-- image using relative path -->
+    <img src="/img/IMG_3584.jpg">
+    
+    <!-- list elements -->
+    
+    <!-- ordered list -->
+    <ol>
+      <li> list item 1 </li>
+      <li> list item 2 </li>
+      <li> list item 3 </li>
+    </ol>
+    
+    <!-- unordered list -->
+    <ul>
+      <li> list item 1 </li>
+      <li> list item 2 </li>
+      <li> list item 3 </li>
+    </ul>
+    
+    <!-- hyperlink element -->
+    <a href="https://www.chinagoingout.org/">中南屋</a>
+    
+    <!-- table elements -->
+		<table>
+		  <tr>
+        <th>Head Cell 0</th>
+        <th>Head Cell 1</th>
+        <th>Head Cell 2</th>
+		  </tr>
+		  <tr>
+			<td>Standard Cell (0, 0)</td>
+			<td>Standard Cell (0, 1)</td>
+			<td>Standard Cell (0, 2)</td>
+		  </tr>
+		  <tr>
+			<td>Standard Cell (1, 0)</td>
+			<td>Standard Cell (1, 1)</td>
+			<td>Standard Cell (1, 2)</td>
+		  </tr>
+		</table>
+		
+    <!-- form element -->
+    <form>
+      <label>Input of text</label>
+			<input type="text" placeholder="Enter something">
+      
+			<label>Input of password</label>
+			<input type="password">
+      
+			<label>Input of number. Min and max is optional.</label>
+			<input type="number" placeholder="Enter a number" min="1" max="99">
+
+      <label>Input of radio. Name should be the same.</label>
+      <input type="radio" name="group0" value="Option 0">Option 1</input>
+      <input type="radio" name="group0" value="Option 1">Option 2</input>
+      <input type="radio" name="group0" value="Option 2">Option 3</input>
+      <input type="radio" name="group0" value="Option 3">Option 4</input>
+
+      <label>Input of Date</label>
+      <input type="date"></input>
+	
+      <label>Input of Color</label>
+      <input type="color"></input>
+  
+			<button id="Submit">Submit</button>
+    </form>
+  </div>
+	
+	<div id="sample">
+		<form>
+			<div class="form-div">
+				<label><strong>Username</strong></label>
+				<input type="text" id="username" placeholder="Enter username" onblur="validUsername()" required>
+				<span id="usernamePrompt">&nbsp;</span>
+				<label><strong>Password</strong></label>
+				<input type="password" id="password" onblur="validPassword()" required>
+				<span id="passwordPrompt">&nbsp;</span>
+			</div>
+			
+			<div class="form-div">
+			<label><strong>What is your name?</strong></label>
+				<input type="text" placeholder="Enter first name">
+				<input type="text" placeholder="Enter last name">
+			</div>
+			
+			<div class="form-div">
+				<label><strong>What is your age?</strong></label>
+				<input type="number" placeholder="Enter your age" min="1" max="99">
+			</div>
+			
+			<div class="form-div">
+				<label><strong>Which is your favourite picture?</strong><br></label>
+				<input type="radio" name="picture" value="Nagoya">Nagoya</input>
+				<input type="radio" name="picture" value="Kyoto">Kyoto</input>
+				<input type="radio" name="picture" value="Kanazawa">Kanazawa</input>
+				<input type="radio" name="picture" value="Takayama">Takayama</input>
+			</div>
+			
+			<div class="form-div">
+				<label><strong>Have you been to Japan?</strong><br></label>
+				<input type="radio" name="visited" value="Y">Yes</input>
+				<input type="radio" name="visited" value="N">No</input>
+			</div>
+			
+			<div class="form-div">
+				<label><strong>If yes for the above question, when did you visit Japan?</strong><br></label>
+				<input type="date" name="visitDate"></input>
+			</div>
+	
+			<button id="Submit"><strong>Submit</Strong></button>
+		</form>
+		
+		<p id="hint">Hint: Username should be case-sensitive 5-to-12-character-only string. Password should be a digit-only string with length 4.</p>
+  </div>
+  
+ </body>
+</html> 
