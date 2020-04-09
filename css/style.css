@@ -6,6 +6,10 @@ body{
   color: white;
 }
 
+#sample {
+  margin-top: 100px;
+}
+
 #introduction{
   margin-bottom: 50px;
 }
