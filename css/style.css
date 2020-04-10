@@ -1,0 +1,90 @@
+body{
+  font-family: Arial;
+  text-align: center;
+  margin:50px;
+  background-color: steelblue;
+  color: white;
+}
+
+#sample {
+  margin-top: 100px;
+}
+
+#introduction{
+  margin-bottom: 50px;
+}
+
+#main{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 12pt;
+}
+
+table{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left:auto;
+  margin-right:auto;
+  border: 1px solid white;
+  font-size: 10pt;
+  text-align:center
+}
+
+.city-with-img{
+  width: 50%;
+  display: inline-block;
+}
+
+form{
+  width: 50%;
+  display: inline-block;
+}
+
+label{
+  width: 100%;
+  margin: 10px 10px 10px 10px;
+}
+
+input[type=text], input[type=password], input[type=number], input[type="date"] {
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  padding: 5px;
+  margin: 10px;
+}
+
+img{
+  width: 100%;
+}
+
+span{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-div{
+  margin-bottom: 20px;
+}
+
+#submit{
+  background-color: white; /* Green */
+  border: none;
+  color: steelblue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#hint {
+  font-size: 11px;
+}
